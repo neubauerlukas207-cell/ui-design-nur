@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Návrh uživatelského rozhraní</title>
+
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      background-image: url(background_line.jpg);
+      background-repeat: repeat-x;
+      background-color: #141414;
+      font-family: Arial;
+      color: #141414;
+    }
+
+    #main {
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      width: 984px;
+    }
+
+    #tab {
+      position: absolute;
+      z-index: 2;
+      top: 195px;
+      left: 100px;
+    }
+    td { padding: 10px; }
+
+    a:link, a:visited, a:active { text-decoration: none; color: #141414; }
+    a:hover { text-decoration: none; color: darkred; }
+
+
+    #head {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 984px;
+      height: 280px;
+      background-image: url(head.jpg);
+    }
+
+
+    #telo {
+      position: absolute;
+      left: 0;
+      top: 280px;
+      width: 640px;
+      height: 636px;
+      background-image: url(main.jpg);
+    }
+
+
+    #info {
+      position: absolute;
+      left: 640px;
+      top: 280px;
+      width: 344px;
+      height: 636px;
+      background-image: url(info.jpg);
+    }
+
+
+    #foot {
+      position: absolute;
+      left: 0;
+      top: 916px;
+      width: 984px;
+      height: 128px;
+      background-image: url(foot.jpg);
+    }
+
+
+    #fb {
+      position: absolute;
+      top: 895px;
+      width: 30px;
+      height: 30px;
+      display: block;
+      z-index: 9999;
+      left: 880px;   
+      
+      
+      
+    
+    }
+//#fb { background: rgba(0,255,0,0.3); }
+
+    #odst {
+      position: absolute;
+      top: 420px;
+      left: 120px;
+      text-align: left;
+      font-size: 10pt;
+      font-family: sans-serif;
+      width: 400px;
+    }
+
+    #o1, #o2, #o3 {
+      position: absolute;
+      top: 540px;
+      width: 124px;
+      height: 93px;
+      object-fit: cover;
+    }
+    #o1 { left: 164px; }
+    #o2 { left: 317px; }
+    #o3 { left: 468px; }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <table id="tab">
+      <tr>
+        <td><a href="">vonné tyčinky</a></td>
+        <td><a href="">bytové doplňky</a></td>
+        <td><a href="">bižuterie</a></td>
+        <td><a href="">vodní dýmky</a></td>
+      </tr>
+    </table>
+
+    <div id="head"></div>
+
+    <div id="telo">
+      <p id="odst">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+      </p>
+
+      <img src="ptakopysk.jpg" id="o1" alt="">
+      <img src="ptakopysk2.jpg" id="o2" alt="">
+      <img src="ptakopysk3.jpg" id="o3" alt="">
+    </div>
+
+    <div id="info"></div>
+
+    <div id="foot">
+      <p style="text-align:center;margin-top:43px;margin-bottom:1px;color:#fff;">powered by Xantium ©2011</p>
+      <p style="text-align:center;margin:0;color:#fff;">webdesign by Olymp ©2011</p>
+      <p style="text-align:center;margin-top:15px;color:#fff;margin-bottom:0;opacity:.5;">všechna práva vyhrazena</p>
+    </div>
+
+    <a id="fb" href="https://www.facebook.com/" target="_blank"></a>
+  </div>
+</body>
+</html>
